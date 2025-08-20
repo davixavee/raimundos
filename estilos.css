@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Caesar+Dressing&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: transparent;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: left;
+    padding: 16px 32px;
+    z-index: 1000;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+}
+
+nav.scrolled {
+    background: #bd0000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+nav .logo {
+    font-weight: none;
+    font-size: 24px;
+    letter-spacing: 2px;
+
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 100px;
+}
+
+nav ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #bd0000;
+}
+
+header {
+    background: url("https://img.freepik.com/fotos-premium/textura-plano-de-fundo-ou-cenario-de-papelao-ondulado-marrom_184700-1916.jpg")no-repeat center center/cover;
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    color: white;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+    padding: 0 16px;
+    padding-top: 100px;
+    text-align: right;
+    font-family: "Caesar Dressing", system-ui;
+    font-size: 35px;
+}
+
+header h1 {
+    font-size: 48px;
+    max-width: 700px;
+    line-height: 1.2;
+    animation: fadeInDown 1.5s ease forwards;
+}
+
+#logo {
+    width: 20%;
+    height: auto;
+    margin-right: 20px;
+}
+
+footer {
+    background: url("https://img.freepik.com/fotos-premium/textura-plano-de-fundo-ou-cenario-de-papelao-ondulado-marrom_184700-1916.jpg")no-repeat center center/cover;
+    text-align: center;
+}
